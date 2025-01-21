@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>G.S Printers</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>G.S Printers - Multi Colour Offset Printers</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<script async src="https://tally.so/widgets/embed.js"></script>
+</head>
+<body>
+
+  <style>
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #264653;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-name {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-logo {
+      width: 40px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #e9c46a;
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+      font-size: 2rem;
+      color: white;
+    }
+
+    /* Mobile View Styles */
+    @media (max-width: 768px) {
+      .hamburger-menu {
+        display: block;
+      }
+
+      .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: #264653;
+        padding: 10px 0;
+        border-radius: 8px;
+        position: absolute; /* Make it dropdown-like */
+        top: 60px;
+        left: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        animation: dropdown 0.3s ease-out;
+        z-index: 10;
+      }
+
+      .nav-links.open {
+        display: flex; /* Show menu when open */
+      }
+
+      .nav-links a {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+      }
+
+      .nav-links a:hover {
+        background-color: #e9c46a;
+        color: #264653;
+      }
+    }
+
+    /* Dropdown Animation */
+    @keyframes dropdown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="https://i.ibb.co/2304CDv/GS-INVOICE-LOGO-tr.png" alt="G.S Printers Logo" class="nav-logo">
+      <span class="brand-name">G.S Printers</span>
+    </div>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products & Services</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="https://drive.google.com/file/d/1DmlcBzT9Ers47oL8wQhzBwjK49mbEbTu" download>Brochure</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('open');
+    }
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('open'); // Close the menu
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- Hero Section -->
+<header id="home" class="hero">
+    <div class="hero-content">
+        <div class="logo-container">
+            <img src="https://i.ibb.co/2304CDv/GS-INVOICE-LOGO-tr.png" alt="GS Printers Logo" class="logo">
+        </div>
+        <h1 class="tagline">Innovative Solutions in Multi-Colour Offset & Digital Printing</h1>
+<br>
+        <p class="description">Your trusted partner for high-quality printing services since 2009.</p>
+<br>        
+<p class="hero-subtagline">Printing & Designing Solutions under <br><strong>ONE ROOF</strong><br> With Single Minded Focus on Excellence</p>
+<br>
+        <a href="#products" class="btn-primary">Explore Our Services</a>
+    </div>
+</header>
+
+
+<!-- About Us Section -->
+<section id="about" class="about-us">
+  <!-- First Block -->
+  <div class="about-container">
+    <div class="about-content">
+      <h2 class="section-title">About Us</h2>
+      <p>Established in 2009, G.S Printers is a leading manufacturer in the printing industry, specializing in multi-colour offset printing. Located in the heart of Bengaluru, we take pride in delivering high-quality printed materials tailored to meet your business needs.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://i.ibb.co/8PPx67Y/g-s-printers-sudhama-nagar-bangalore-printing-press-e7y70oyt11.jpg" alt="About Us Image">
+    </div>
+  </div>
+
+  <!-- Second Block -->
+  <div class="about-container">
+    <div class="about-content">
+      <ul class="about-bullet-points">
+        <li>We provide printing services suitable to any product or service to match everyday printing requirements of wide-range of customers.</li>
+        <li>Your product may be printed in single or multi colour with consistent print quality and service.</li>
+        <li>Our Team can lead the way—providing innovative solutions to meet your changing needs.</li>
+      </ul>
+</div>
+<div class="about-image">
+      <img src="https://i.ibb.co/HBGq2Kh/wmremove-transformed-1.jpg" alt="Our Services Image">
+    </div>
+  </div>
+
+  <!-- Third Block -->
+  <div class="about-container">
+    <div class="about-content">
+      <ul class="about-details">
+        <li><strong>Nature of Business:</strong> Manufacturer</li>
+        <li><strong>Total Number of Employees:</strong> Up to 10 People</li>
+        <li><strong>GST Registration Date:</strong> 01-01-2009</li>
+        <li><strong>Legal Status of Firm:</strong> Proprietorship</li>
+        <li><strong>GST No.:</strong> 29AKRPG6454B1ZZ</li>
+        <li><strong>Address:</strong> #4, 4th Cross, Sudhamanagar, Bengaluru - 560027, Karnataka, India</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="https://i.ibb.co/CWrmfnn/Depositphotos-46353969-original-1-1.jpg">
+    </div>
+  </div>
+</section>
+
+
+<!-- Products & Services Section -->
+<section id="products" class="services">
+  <h2 class="section-title" style="text-align: center; margin: 20px 0; font-size: 2em; font-weight: bold;">Products & Services</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="https://i.ibb.co/9HpT2Pq/image-3.jpg" alt="Corporate Stationery" class="service-image">
+      <h3>Corporate Stationery</h3>
+      <p>A set of branded letterheads, envelopes, and notepads to represent your business professionally.</p>
+<a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+
+    </div>
+    <div class="service-card">
+      <img src="https://i.ibb.co/BGWYZ2W/image-6.jpg" alt="Brochures & Catalogs" class="service-image">
+      <h3>Brochures & Catalogs</h3>
+      <p>Open brochures showcasing vibrant designs and detailed product information.</p>
+  <a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+    </div>
+    <div class="service-card">
+      <img src="https://i.ibb.co/BT1kn8N/image-7.jpg" alt="Flyers & Posters" class="service-image">
+      <h3>Flyers & Posters</h3>
+      <p>High-quality promotional materials designed to captivate your audience.</p>
+ <a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+    </div>
+    <div class="service-card">
+      <img src="https://i.ibb.co/ZcZznVN/image-13.jpg" alt="Custom Packaging Solutions" class="service-image">
+      <h3>Custom Packaging Solutions</h3>
+      <p>Beautifully printed packaging boxes and bags with your brand logo.</p>
+ <a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+
+    </div>
+    <div class="service-card">
+      <img src="https://i.ibb.co/KVr6kM0/1248-gloss-stickers-1.jpg" alt="Labels & Stickers" class="service-image">
+      <h3>Labels & Stickers</h3>
+      <p>High-quality labels and stickers applied to bottles, jars, packages Etc.</p>
+ <a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+    </div>
+    <div class="service-card">
+      <img src="https://i.ibb.co/H2X1BJG/image-15.jpg" alt="Book Printing & Binding" class="service-image">
+      <h3>Book Printing & Binding</h3>
+      <p>Durable hardcover books or spiral-bound manuals with vibrant cover designs.</p>
+      <a href class="service-button"data-tally-open="n01dGB" data-tally-emoji-animation="none" data-tally-auto-close="2000">Get Quote</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Clients Section -->
+<br>
+<section id="clients" class="clients" style="width: 100%; margin: 0; padding: 0;">
+  <div style="text-align: center;">
+    <img src="https://i.imghippo.com/files/eLMU8110uD.png" alt="Our Clients" style="width: 100%; height: auto; display: block;">
+  </div>
+</section>
+<br>
+
+
+<!-- Contact & Quotation Section -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Request a Quotation</h2>
+  <p>Please fill out the form below to share your requirements, and we’ll get back to you with a tailored quotation.</p>
+
+  <div class="quotation-form">
+    <!-- Embedded Form for Contact & Quotation Request -->
+    <iframe 
+      src="https://tally.so/embed/n01dGB?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy" 
+      width="100%" 
+      height="500" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0" 
+      title="Contact & Quotation Request Form">
+    </iframe>
+  </div>
+
+  <!-- Preload Tally Script -->
+  <script async>
+    const script = document.createElement('script');
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  </script>
+</section>
+
+
+
+
+<!-- Footer Section -->
+<footer class="footer" id="sitemap">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <ul>
+        <li>
+          <i class="fas fa-envelope"></i> Email: 
+          <a href="mailto:gsprinters19722@gmail.com">gsprinters19722@gmail.com</a>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i> Phone: 
+          <a href="tel:+919845990125">+91-9845990125</a>, 
+          <a href="tel:+918217636470">+91-8217636470</a>
+        </li>
+        <li>
+          <i class="fas fa-map-marker-alt"></i> Address: 
+          <a>#4, 4th Cross, Sudhamanagar, Bengaluru - 560027, Karnataka, India</a>
+        </li>
+        <li>
+          <a href="https://maps.app.goo.gl/7d8UHiGMECVt13Xx8" target="_blank">
+            <i class="fas fa-map"></i> Get Directions
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <img src="https://i.ibb.co/7vbqfGX/Backup-of-GS-INVOICE-LOGO222.png" alt="Logo" class="footer-logo">
+      <br>
+      <h2>Follow Us</h2>
+      <a href="https://www.facebook.com/share/1Au7gN6Ycw/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/919845990125" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/g-s-printers/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <div class="footer-sitemap">
+      <h2>Sitemap</h2>
+      <ul class="sitemap-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products & Services</a></li>
+        <li><a href="https://drive.google.com/file/d/1DmlcBzT9Ers47oL8wQhzBwjK49mbEbTu" download>Brochure</a></li>
+
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <p>&copy; G.S Printers. All Rights Reserved. GST No.: 29AKRPG6454B1ZZ</p>
+</footer>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
