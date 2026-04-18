@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, button {
 
 /* Navigation Bar Logo */
 .nav-logo {
-  width: 100px; /* Small logo for the navigation bar */
+  width: 200px; /* Small logo for the navigation bar */
   height: auto;
 }
 
