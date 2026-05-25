@@ -155,7 +155,7 @@ a {
   align-items: center;
   background:
     linear-gradient(rgba(5, 15, 30, 0.78), rgba(5, 15, 30, 0.72)),
-    url('hero-bg.jpg')
+    url('hero-bg.png')
     center/cover no-repeat;
   padding-top: 120px;
 }
