@@ -230,16 +230,17 @@ a {
 
 .trust-card {
   background: white;
-  padding: 30px;
-  border-radius: 22px;
+  padding: 34px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(23,63,138,0.08);
+  border: 1px solid rgba(23,63,138,0.06);
 }
 
 .trust-card h3 {
-  font-size: 2rem;
-  color: #0f4c81;
-  margin-bottom: 8px;
+  color: var(--primary-blue);
+  font-size: 2.4rem;
+  font-weight: 800;
 }
 
 .trust-card p {
@@ -253,16 +254,15 @@ a {
 }
 
 .section-heading span {
-  color: #f97316;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
+  color: var(--accent-green);
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 3vw, 3.2rem);
-  margin: 14px 0;
-  color: #111827;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--dark-text);
 }
 
 .section-heading p {
