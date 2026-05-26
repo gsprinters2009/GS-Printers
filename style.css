@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   background: #ffffff;
   color: var(--dark-text);
   line-height: 1.6;
@@ -198,6 +198,10 @@ a {
 }
 
 .hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1.2px;
   color: white;
 }
 
@@ -269,7 +273,7 @@ a {
 }
 
 .section-heading h2 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 48px;
   line-height: 1.15;
   font-weight: 800;
