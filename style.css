@@ -157,7 +157,7 @@ a {
     linear-gradient(rgba(5, 15, 30, 0.78), rgba(5, 15, 30, 0.72)),
     url('hero-bg.jpg')
     center/cover no-repeat;
-  padding-top: 120px;
+  padding: 140px 0 120px;
 }
 
 .hero-grid {
@@ -206,7 +206,8 @@ a {
 
 /* TRUST */
 .trust-section {
-  margin-top: -70px;
+  padding: 80px 0 40px;
+  background: white;
   position: relative;
   z-index: 5;
 }
