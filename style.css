@@ -194,12 +194,13 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 4.8vw, 5rem);
-  line-height: 1.05;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(2.8rem, 4vw, 56px);
+  line-height: 1.12;
   font-weight: 800;
-  letter-spacing: -1.5px;
-  color: white;
-  max-width: 700px;
+  letter-spacing: -1px;
+  max-width: 680px;
+  margin-bottom: 24px;
 }
 
 .hero p {
