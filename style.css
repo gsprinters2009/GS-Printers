@@ -198,22 +198,26 @@ a {
 }
 
 .hero h1 {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 800;
-  line-height: 1.12;
-  letter-spacing: -1.2px;
-  color: white;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -1px !important;
+  color: white !important;
+  margin-bottom: 20px !important;
+  max-width: 700px !important;
 }
 
 .hero h1 span {
-  color: #56C000;
+  color: #56C000 !important;
   display: block;
 }
 
 .hero p {
-  font-size: 24px;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.88);
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 24px !important;
+  line-height: 1.5 !important;
+  color: rgba(255,255,255,0.88) !important;
   max-width: 620px;
   margin-bottom: 36px;
 }
