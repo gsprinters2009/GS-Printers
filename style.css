@@ -167,14 +167,17 @@ a {
 }
 
 .hero-badge {
-  display: inline-block;
-  background: rgba(255,255,255,0.14);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 28px;
+    display: inline-block;
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;   /* ADD THIS */
+    letter-spacing: -0.2px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(8px);
 }
 
 .hero h1 {
