@@ -603,4 +603,57 @@ a {
   .contact-form iframe {
     height: 500px;
   }
+
+/* =========================
+   GLOBAL SECTION HEADINGS
+========================= */
+
+.section-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+.section-tag {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #56C000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    display: inline-block;
+    position: relative;
+}
+
+/* green rectangular underline */
+.section-tag::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 4px;
+    background: #56C000;
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+.section-header h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #1C2434;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.section-header p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6B7280;
+    max-width: 760px;
+    margin: 0 auto;
+}
 }
