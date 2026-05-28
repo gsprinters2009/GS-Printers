@@ -144,9 +144,9 @@ a {
    HERO
 ========================= */
 .hero {
-  min-height: 100vh;
-  padding-top: 170px;
-  padding-bottom: 90px;
+  min-height: auto;
+  padding-top: 180px;
+  padding-bottom: 120px;
   background:
     linear-gradient(
       90deg,
@@ -159,12 +159,6 @@ a {
   align-items: center;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  align-items: center;
-  gap: 60px;
-}
 
 .hero-badge {
     display: inline-block;
@@ -207,18 +201,6 @@ a {
   gap: 18px;
   margin-top: 34px;
   flex-wrap: wrap;
-}
-
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-visual img {
-  width: 680px;
-  max-width: 100%;
-  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.35));
 }
 
 /* =========================
