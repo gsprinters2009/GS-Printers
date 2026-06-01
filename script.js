@@ -82,4 +82,3 @@ whatsappButtons.forEach(button => {
   });
 });
 
-});
