@@ -375,18 +375,39 @@
 
       </div>
 
-      <div class="contact-form">
-        <iframe
-  src="https://tally.so/embed/n01dGB?alignLeft=1&hideTitle=1&transparentBackground=1"
-  loading="lazy"
-  width="100%"
-  height="980"
-  frameborder="0"
-  marginheight="0"
-  marginwidth="0"
-  title="Contact Form"
-></iframe>
-      </div>
+      <form id="contact-form">
+
+    <input type="hidden"
+           name="access_key"
+           value="0edf9ac5-9eb9-41e7-b512-b0493a5220d6">
+
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email">
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label>Requirements / Message</label>
+        <textarea name="message"></textarea>
+    </div>
+
+    <button type="submit">
+        Submit
+    </button>
+
+</form>
+
+<div id="result"></div>
 
     </div>
   </section>
