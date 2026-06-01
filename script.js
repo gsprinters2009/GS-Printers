@@ -81,3 +81,40 @@ whatsappButtons.forEach(button => {
     console.log("WhatsApp CTA clicked");
   });
 });
+
+const form = document.getElementById("contact-form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    result.innerHTML = "Sending...";
+
+    const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+            method: "POST",
+            body: formData
+        }
+    );
+
+    const data = await response.json();
+
+    if(data.success){
+
+        result.innerHTML =
+        "Thank you! Your enquiry has been sent.";
+
+        form.reset();
+
+    } else {
+
+        result.innerHTML =
+        "Error: " + data.message;
+
+    }
+
+});
