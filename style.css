@@ -700,5 +700,38 @@ a {
 }
 
 }
+
+.mobile-nav{
+    position:absolute;
+    top:82px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.mobile-nav a{
+    padding:16px 0;
+    border-bottom:1px solid #eee;
+}     
+
+@media(max-width:768px){
+
+.service-card img{
+    height:180px;
+}
+
+}     
+
+@media(max-width:768px){
+
+.portfolio-grid img{
+    height:220px;
+}
+
+}     
   }
 }
+
+
