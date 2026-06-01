@@ -92,7 +92,7 @@ a {
 }
 
 .logo img {
-  height: 56px;
+  height: 48px;
   width: auto;
 }
 
@@ -842,4 +842,50 @@ a {
     gap:14px;
   }
 
+@media (max-width:768px){
+
+.site-header{
+    padding:0;
+}
+
+.nav-container{
+    height:72px;
+}
+
+.logo img{
+    height:38px;
+}
+
+.nav-actions .btn{
+    display:none;
+}
+
+.mobile-menu-btn{
+    display:block;
+    font-size:32px;
+    padding:10px;
+}
+
+.mobile-nav{
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    background:#fff;
+    z-index:999;
+}
+
+.mobile-nav a{
+    display:block;
+    padding:18px 25px;
+    border-bottom:1px solid #eee;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+.logo img{
+    height:36px;
+}
+}
+   
 }
