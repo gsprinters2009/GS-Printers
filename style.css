@@ -126,6 +126,10 @@ a {
   cursor: pointer;
 }
 
+.mobile-nav.active{
+    display:flex;
+}
+
 .mobile-nav {
   display: none;
   flex-direction: column;
