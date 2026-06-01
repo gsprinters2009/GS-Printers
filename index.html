@@ -375,33 +375,43 @@
 
       </div>
 
-      <form id="contact-form">
+      <form id="contact-form" enctype="multipart/form-data">
 
-    <input type="hidden"
-           name="access_key"
-           value="0edf9ac5-9eb9-41e7-b512-b0493a5220d6">
+    <input type="hidden" name="access_key" value="0edf9ac5-9eb9-41e7-b512-b0493a5220d6">
 
+    <input type="hidden" name="subject" value="New Enquiry from G.S Printers Website">
+
+    <!-- Name -->
     <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
     </div>
 
+    <!-- Email -->
     <div class="form-group">
-        <label>Email</label>
-        <input type="email" name="email">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
     </div>
 
+    <!-- Phone -->
     <div class="form-group">
-        <label>Phone</label>
-        <input type="tel" name="phone">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
     </div>
 
+    <!-- Message -->
     <div class="form-group">
-        <label>Requirements / Message</label>
-        <textarea name="message"></textarea>
+        <label for="message">Requirements / Message</label>
+        <textarea id="message" name="message" rows="6"></textarea>
     </div>
 
-    <button type="submit">
+    <!-- File Upload -->
+    <div class="form-group">
+        <label for="attachment">File Upload</label>
+        <input type="file" id="attachment" name="attachment">
+    </div>
+
+    <button type="submit" class="submit-btn">
         Submit
     </button>
 
@@ -456,6 +466,54 @@
 </footer>
 
   <script src="script.js"></script>
+
+  <script>
+const form = document.getElementById("contact-form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    result.innerHTML = "Sending...";
+
+    const formData = new FormData(form);
+
+    try {
+
+        const response = await fetch(
+            "https://api.web3forms.com/submit",
+            {
+                method: "POST",
+                body: formData
+            }
+        );
+
+        const data = await response.json();
+
+        if (data.success) {
+
+            result.innerHTML =
+                "<span style='color:#42c84c;'>Thank you! Your enquiry has been submitted successfully.</span>";
+
+            form.reset();
+
+        } else {
+
+            result.innerHTML =
+                "<span style='color:red;'>Something went wrong. Please try again.</span>";
+
+        }
+
+    } catch (error) {
+
+        result.innerHTML =
+            "<span style='color:red;'>Network error. Please try again.</span>";
+
+    }
+
+});
+</script>
 
 </body>
 </html>
