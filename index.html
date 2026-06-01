@@ -98,7 +98,7 @@
         </p>
 
         <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">
+          <a href="#contact" class="btn btn-primary">
             Get Instant Quote
           </a>
 
@@ -375,29 +375,18 @@
 
       </div>
 
-     <form id="contact-form" enctype="multipart/form-data">
-
-<input type="hidden"
-name="access_key"
-value="0edf9ac5-9eb9-41e7-b512-b0493a5220d6">
-
-<input type="text" name="name">
-
-<input type="email" name="email">
-
-<input type="tel" name="phone">
-
-<textarea name="message"></textarea>
-
-<input type="file" name="attachment">
-
-<button type="submit">
-Submit
-</button>
-
-</form>
-
-<div id="result"></div>
+      <div class="contact-form">
+        <iframe
+  src="https://tally.so/embed/n01dGB?alignLeft=1&hideTitle=1&transparentBackground=1"
+  loading="lazy"
+  width="100%"
+  height="980"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+  title="Contact Form"
+></iframe>
+      </div>
 
     </div>
   </section>
@@ -446,54 +435,6 @@ Submit
 </footer>
 
   <script src="script.js"></script>
-
-  <script>
-const form = document.getElementById("contact-form");
-const result = document.getElementById("result");
-
-form.addEventListener("submit", async function(e) {
-
-    e.preventDefault();
-
-    result.innerHTML = "Sending...";
-
-    const formData = new FormData(form);
-
-    try {
-
-        const response = await fetch(
-            "https://api.web3forms.com/submit",
-            {
-                method: "POST",
-                body: formData
-            }
-        );
-
-        const data = await response.json();
-
-        if (data.success) {
-
-            result.innerHTML =
-                "<span style='color:#42c84c;'>Thank you! Your enquiry has been submitted successfully.</span>";
-
-            form.reset();
-
-        } else {
-
-            result.innerHTML =
-                "<span style='color:red;'>Something went wrong. Please try again.</span>";
-
-        }
-
-    } catch (error) {
-
-        result.innerHTML =
-            "<span style='color:red;'>Network error. Please try again.</span>";
-
-    }
-
-});
-</script>
 
 </body>
 </html>
