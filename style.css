@@ -295,9 +295,15 @@ a {
 ========================= */
 .services-section,
 .portfolio-section,
+
 .contact-section {
   background: #f8fafc;
-  padding:50px 0 20px;
+  padding:40px 0 20px;
+  margin-top: 0;
+}
+
+.contact-container {
+    align-items: start;
 }
 
 .about-section,
@@ -308,6 +314,7 @@ a {
 
 .cta-section {
   background: #f8fafc;
+  margin-bottom: 40px;
   padding: 90px 0;
 }
 
