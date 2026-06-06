@@ -476,25 +476,21 @@ a {
 ========================= */
 .contact-grid{
     display:grid;
-    grid-template-columns:50% 40%;
-    justify-content:space-between;
-    gap:80px;
+    grid-template-columns:1fr 580px;
+    gap:60px;
     align-items:start;
 }
 
 .contact-info{
   width:100%;
-}
-
-.contact-form{
-    margin-top:50px;
+   padding-top:20px;
 }
 
 .contact-form{
     width:100%;
-    max-width:650px;
+    max-width:580px;
     justify-self:end;
-    margin-top:70px;
+    margin-top:30px;
 }
 
 .contact-form iframe{
@@ -902,8 +898,6 @@ a {
     gap:14px;
   }
 
-@media (max-width:768px){
-
 .site-header{
     padding:0;
 }
@@ -942,7 +936,6 @@ a {
     font-size:18px;
 }
 
-@media(max-width:768px){
 .logo img{
     height:36px;
 }
