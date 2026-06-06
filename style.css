@@ -311,6 +311,34 @@ a {
   padding: 90px 0;
 }
 
+/* CONTACT INFO ALIGNMENT */
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:16px;
+}
+
+.contact-item i{
+    width:22px;
+    font-size:20px;
+    margin-top:4px;
+    flex-shrink:0;
+}
+
+.contact-text{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.contact-text span,
+.contact-text a{
+    line-height:1.6;
+    color:#1e293b;
+}
+
 /* =========================
    SERVICES
 ========================= */
@@ -472,6 +500,34 @@ a {
   border-radius: 24px;
   overflow: hidden;
   display: block;
+}
+
+/* CONTACT INFO ALIGNMENT */
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:16px;
+}
+
+.contact-item i{
+    width:22px;
+    font-size:20px;
+    margin-top:4px;
+    flex-shrink:0;
+}
+
+.contact-text{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.contact-text span,
+.contact-text a{
+    line-height:1.6;
+    color:#1e293b;
 }
 
 /* =========================
