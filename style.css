@@ -469,7 +469,7 @@ a {
 .cta-box h2::after{
     content:"";
     display:block;
-    width:200px;
+    width:350px;
     height:5px;
     background:#ffffff;
     margin:15px auto 0;
