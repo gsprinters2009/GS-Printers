@@ -463,6 +463,16 @@ a {
     font-weight:800;
     color:#fff;
     margin-bottom:20px;
+    position:relative;
+}
+
+.cta-box h2::after{
+    content:"";
+    display:block;
+    width:110px;
+    height:5px;
+    background:#ffffff;
+    margin:15px auto 0;
 }
 
 .cta-box p{
