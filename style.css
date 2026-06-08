@@ -51,7 +51,7 @@ a {
 }
 
 .btn-primary {
-  background: linear-gradient(#0f4c81, #0b2f57);
+  background: #122298;
   color: white;
   border: none;
 }
@@ -63,7 +63,7 @@ a {
 
 .btn-secondary {
   background: white;
-  color: linear-gradient(#0f4c81, #0b2f57);
+  color: #122298;
   border: 2px solid rgba(255,255,255,0.2);
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 .desktop-nav a:hover {
-  color: linear-gradient(#0f4c81, #0b2f57);
+  color: #122298;
 }
 
 .nav-actions {
@@ -232,7 +232,7 @@ a {
 .trust-card h3 {
   font-size: 42px;
   font-weight: 800;
-  color: linear-gradient(#0f4c81, #0b2f57);
+  color: #122298;
 }
 
 .trust-card p {
@@ -494,13 +494,13 @@ a {
 
 .cta-box .btn-primary{
     background:#ffffff;
-    color:linear-gradient(#0f4c81, #0b2f57);
+    color:#122298;
     border:2px solid #ffffff;
 }
 
 .cta-box .btn-primary:hover{
     background:#f8fafc;
-    color:linear-gradient(#0f4c81, #0b2f57);
+    color:#122298;
 }
 
 .cta-box .btn-secondary{
@@ -932,13 +932,13 @@ a {
 
 .cta-box .btn-primary{
     background: #ffffff;
-    color: linear-gradient(#0f4c81, #0b2f57);
+    color: #122298;
     border: 2px solid #ffffff;
 }
 
 .cta-box .btn-primary:hover{
     background: #f3f4f6;
-    color: linear-gradient(#0f4c81, #0b2f57);
+    color: #122298;
 }
 
 .cta-box .btn-secondary{
